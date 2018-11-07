@@ -3,9 +3,19 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="d3.layout.cloud.js"></script>
 <head>
-    <title>Word Cloud Example</title>
+    <title>Positive Words of Tweets Related to Donald Trump</title>
 	<script src="0_goodwords.js" ></script>
 	<script src="1_goodwords.js"></script>
+	<script src="2_goodwords.js"></script>
+	<script src="3_goodwords.js"></script>
+	<script src="4_goodwords.js"></script>
+	<script src="5_goodwords.js"></script>
+	<script src="6_goodwords.js"></script>
+	<script src="7_goodwords.js"></script>
+	<script src="8_goodwords.js"></script>
+	<script src="9_goodwords.js"></script>
+	<script src="10_goodwords.js"></script>
+	<script src="11_goodwords.js"></script>
 </head>
 <style>
     body {
@@ -74,7 +84,7 @@
 	function draw(words) {
 		//var data_1 = words.slice(0, words.length - 55);
 		//var data_2 = words.slice(words.length - 55, words.length);
-		 canvas1.selectAll("g").remove();
+		 canvas1.selectAll("text").remove(); //remove the text(content) of svg
 		 
 		 canvas1.selectAll("text")
                 .data(words)
@@ -82,16 +92,14 @@
 				.attr("transform", function(d) {
                     return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
                 })
-                .style("font-size", function(d) { return 1 + "px"; })
-					.transition()
-					.duration(10000)
-				.style("font-size", function(d) { return d.size * 3 + "px";})
+                //.style("font-size", function(d) { return 1 + "px"; })
+				.style("font-size", function(d) { return d.size + "px";})
                 .style("fill", function(d, i) { return color(i); })
                 .text(function(d) { return d.text; })
+	}
 	<!-- word cloud ends -->
 	
 	<!-- horizontal line construction begins -->
-	
 	var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5},
 		width = 960 - margin.right,
 		height = 100 - margin.top - margin.bottom;
@@ -110,19 +118,19 @@
                  .x(function(d) { return x_scale(d['x']); })
                  .y(function(d) { return y_scale(d['y']); });
 				 
-	canvas2.selectAll('path').remove();
 	//canvas2.selectAll('text').remove();
 	var path = canvas2.append('path').attr('d', line(line_data));
 	<!-- horizontal line construction ends -->
 
     
-	// Add the year label; the value is set on transition.
+	<!-- time frame label begins -->
+	// Add the time frame label; the value is set on transition.
 	var label = canvas2.append("text")
 		.attr("class", "year label")
 		.attr("text-anchor", "end")
 		.attr("y", 250)
 		.attr("x", width)
-		.text(1535);
+		.text(1);
 	// Add an overlay for the year label.
 	var box = label.node().getBBox();
 	
@@ -133,17 +141,19 @@
         .attr("width", box.width)
         .attr("height", box.height)
         .on("mouseover", enableInteraction);
+	<!-- time frame label ends -->
+	
 	// Start a transition that interpolates the data based on year.
-	canvas2.transition()
+	/*canvas2.transition()
       .duration(10000)
       .ease("linear")
-      .tween("year", d3.interpolateNumber(1800, 2009))
-      .each("end", enableInteraction);
+      .tween("year", d3.interpolateNumber(1, 12))
+      .each("end", enableInteraction);*/
 	
 	// After the transition finishes, you can mouseover to change the year.
-	 function enableInteraction() {
+	function enableInteraction() {
 		var yearScale = d3.scale.linear()
-			.domain([1535, 1600])
+			.domain([1, 12])
 			.range([box.x + 10, box.x + box.width - 10])
 			.clamp(true);
 
@@ -170,18 +180,42 @@
 	}
 	
 	// Updates the display to show the specified year.
-	function displayYear(year) {
+	function displayYear(time_frame) {
 		//dot.data(interpolateData(year), key).call(position).sort(order);
-		label.text(Math.round(year));
-		if (Math.round(year) == 1550) {
-			drawCloud(data_1);
+		label.text(Math.round(time_frame));
+		switch(Math.round(time_frame)){
+			case 1:
+			drawCloud(data_0); break;
+			case 2:
+			drawCloud(data_1); break;
+			case 3:
+			drawCloud(data_2); break;
+			case 4:
+			drawCloud(data_3); break;
+			case 5:
+			drawCloud(data_4); break;
+			case 6:
+			drawCloud(data_5); break;
+			case 7:
+			drawCloud(data_6); break;
+			case 8:
+			drawCloud(data_7); break;
+			case 9:
+			drawCloud(data_8); break;
+			case 10:
+			drawCloud(data_9); break;
+			case 11:
+			drawCloud(data_10); break;
+			case 12:
+			drawCloud(data_11); break;
 		}
 	}
+
 	
 	// For the interpolated data, the dots and label are redrawn.
 	function tweenYear() {
-		var year = d3.interpolateNumber(1535, 1600);
-		return function(t) { displayYear(year(t)); };
+		var time_frame = d3.interpolateNumber(1, 12); // here it is a float
+		return function(t) { displayYear(time_frame(t)); };
 	  }
 	// Interpolates the dataset for the given (fractional) year.
 	  /*function interpolateData(year) {
@@ -197,7 +231,6 @@
 	  }*/
 
 
-    }
 </script>
 
 </div>

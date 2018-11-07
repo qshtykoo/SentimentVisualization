@@ -1,3 +1,4 @@
+var data_8 = 
 [
   {
     "text": "accomplish",
@@ -17,19 +18,23 @@
   },
   {
     "text": "accurate",
-    "size": 1
+    "size": 2
   },
   {
     "text": "accurately",
-    "size": 1
+    "size": 2
   },
   {
     "text": "admire",
     "size": 1
   },
   {
+    "text": "adorable",
+    "size": 1
+  },
+  {
     "text": "advantage",
-    "size": 2
+    "size": 3
   },
   {
     "text": "advocate",
@@ -40,24 +45,32 @@
     "size": 1
   },
   {
+    "text": "afford",
+    "size": 2
+  },
+  {
+    "text": "affordable",
+    "size": 1
+  },
+  {
     "text": "amazing",
-    "size": 9
+    "size": 11
   },
   {
     "text": "ample",
-    "size": 7
+    "size": 9
   },
   {
     "text": "angel",
-    "size": 1
+    "size": 2
   },
   {
     "text": "angelic",
-    "size": 1
+    "size": 2
   },
   {
     "text": "appeal",
-    "size": 4
+    "size": 5
   },
   {
     "text": "appreciate",
@@ -65,7 +78,11 @@
   },
   {
     "text": "approval",
-    "size": 4
+    "size": 5
+  },
+  {
+    "text": "assure",
+    "size": 1
   },
   {
     "text": "astonish",
@@ -93,7 +110,7 @@
   },
   {
     "text": "believable",
-    "size": 1
+    "size": 2
   },
   {
     "text": "beloved",
@@ -101,23 +118,27 @@
   },
   {
     "text": "benefit",
-    "size": 2
+    "size": 3
   },
   {
     "text": "benefits",
-    "size": 2
+    "size": 3
   },
   {
     "text": "best",
-    "size": 14
+    "size": 16
   },
   {
     "text": "better",
-    "size": 82
+    "size": 95
   },
   {
     "text": "bless",
-    "size": 3
+    "size": 4
+  },
+  {
+    "text": "blossom",
+    "size": 1
   },
   {
     "text": "bonus",
@@ -129,7 +150,7 @@
   },
   {
     "text": "boost",
-    "size": 2
+    "size": 3
   },
   {
     "text": "brave",
@@ -137,7 +158,7 @@
   },
   {
     "text": "brisk",
-    "size": 8
+    "size": 10
   },
   {
     "text": "celebrate",
@@ -153,7 +174,7 @@
   },
   {
     "text": "cheer",
-    "size": 2
+    "size": 4
   },
   {
     "text": "clean",
@@ -161,11 +182,11 @@
   },
   {
     "text": "clear",
-    "size": 25
+    "size": 29
   },
   {
     "text": "clearly",
-    "size": 5
+    "size": 6
   },
   {
     "text": "commend",
@@ -189,7 +210,7 @@
   },
   {
     "text": "confident",
-    "size": 1
+    "size": 3
   },
   {
     "text": "consistent",
@@ -204,16 +225,24 @@
     "size": 1
   },
   {
+    "text": "cornerstone",
+    "size": 1
+  },
+  {
     "text": "correct",
-    "size": 3
+    "size": 5
+  },
+  {
+    "text": "courage",
+    "size": 1
   },
   {
     "text": "credible",
-    "size": 4
+    "size": 7
   },
   {
     "text": "cure",
-    "size": 2
+    "size": 3
   },
   {
     "text": "cute",
@@ -229,23 +258,35 @@
   },
   {
     "text": "dedicated",
-    "size": 6
+    "size": 8
   },
   {
     "text": "defeat",
-    "size": 1
+    "size": 2
   },
   {
     "text": "defeated",
     "size": 1
   },
   {
+    "text": "delight",
+    "size": 1
+  },
+  {
+    "text": "delightful",
+    "size": 1
+  },
+  {
+    "text": "dignity",
+    "size": 2
+  },
+  {
     "text": "ease",
-    "size": 42
+    "size": 52
   },
   {
     "text": "eased",
-    "size": 8
+    "size": 10
   },
   {
     "text": "eases",
@@ -256,8 +297,12 @@
     "size": 1
   },
   {
+    "text": "easing",
+    "size": 1
+  },
+  {
     "text": "easy",
-    "size": 2
+    "size": 3
   },
   {
     "text": "educated",
@@ -265,19 +310,19 @@
   },
   {
     "text": "elan",
-    "size": 52
+    "size": 65
   },
   {
     "text": "elate",
-    "size": 7
+    "size": 8
   },
   {
     "text": "elated",
-    "size": 7
+    "size": 8
   },
   {
     "text": "elite",
-    "size": 17
+    "size": 21
   },
   {
     "text": "embolden",
@@ -289,6 +334,10 @@
   },
   {
     "text": "empower",
+    "size": 2
+  },
+  {
+    "text": "encourage",
     "size": 1
   },
   {
@@ -297,11 +346,15 @@
   },
   {
     "text": "endorse",
-    "size": 3
+    "size": 5
   },
   {
     "text": "endorsed",
-    "size": 3
+    "size": 4
+  },
+  {
+    "text": "endorsement",
+    "size": 1
   },
   {
     "text": "engaging",
@@ -313,7 +366,19 @@
   },
   {
     "text": "enough",
-    "size": 5
+    "size": 6
+  },
+  {
+    "text": "entertain",
+    "size": 1
+  },
+  {
+    "text": "entertaining",
+    "size": 1
+  },
+  {
+    "text": "entice",
+    "size": 1
   },
   {
     "text": "excel",
@@ -325,11 +390,11 @@
   },
   {
     "text": "excite",
-    "size": 6
+    "size": 9
   },
   {
     "text": "excited",
-    "size": 6
+    "size": 9
   },
   {
     "text": "exonerate",
@@ -337,7 +402,7 @@
   },
   {
     "text": "fair",
-    "size": 30
+    "size": 42
   },
   {
     "text": "faith",
@@ -345,35 +410,39 @@
   },
   {
     "text": "famous",
-    "size": 1
+    "size": 2
   },
   {
     "text": "famously",
-    "size": 1
+    "size": 2
   },
   {
     "text": "fans",
     "size": 2
   },
   {
+    "text": "fast",
+    "size": 1
+  },
+  {
     "text": "fav",
-    "size": 5
+    "size": 7
   },
   {
     "text": "favor",
-    "size": 5
+    "size": 7
   },
   {
     "text": "favorite",
-    "size": 2
+    "size": 3
   },
   {
     "text": "feat",
-    "size": 2
+    "size": 3
   },
   {
     "text": "fine",
-    "size": 5
+    "size": 6
   },
   {
     "text": "finest",
@@ -381,6 +450,10 @@
   },
   {
     "text": "flexibility",
+    "size": 1
+  },
+  {
+    "text": "formidable",
     "size": 1
   },
   {
@@ -393,27 +466,35 @@
   },
   {
     "text": "free",
-    "size": 4
+    "size": 6
+  },
+  {
+    "text": "freed",
+    "size": 1
+  },
+  {
+    "text": "freedom",
+    "size": 1
   },
   {
     "text": "fun",
-    "size": 37
+    "size": 45
   },
   {
     "text": "gain",
-    "size": 18
+    "size": 22
   },
   {
     "text": "gains",
-    "size": 3
-  },
-  {
-    "text": "gem",
     "size": 4
   },
   {
+    "text": "gem",
+    "size": 5
+  },
+  {
     "text": "genius",
-    "size": 9
+    "size": 11
   },
   {
     "text": "glad",
@@ -421,11 +502,11 @@
   },
   {
     "text": "good",
-    "size": 58
+    "size": 68
   },
   {
     "text": "grace",
-    "size": 10
+    "size": 12
   },
   {
     "text": "graceful",
@@ -433,7 +514,7 @@
   },
   {
     "text": "grand",
-    "size": 8
+    "size": 12
   },
   {
     "text": "gratitude",
@@ -441,11 +522,11 @@
   },
   {
     "text": "great",
-    "size": 70
+    "size": 89
   },
   {
     "text": "greatest",
-    "size": 1
+    "size": 3
   },
   {
     "text": "grin",
@@ -465,7 +546,7 @@
   },
   {
     "text": "happy",
-    "size": 3
+    "size": 6
   },
   {
     "text": "harmless",
@@ -473,7 +554,7 @@
   },
   {
     "text": "heal",
-    "size": 39
+    "size": 47
   },
   {
     "text": "healthy",
@@ -481,11 +562,15 @@
   },
   {
     "text": "helped",
-    "size": 3
+    "size": 7
+  },
+  {
+    "text": "helpful",
+    "size": 1
   },
   {
     "text": "helping",
-    "size": 2
+    "size": 3
   },
   {
     "text": "hero",
@@ -493,19 +578,27 @@
   },
   {
     "text": "hilarious",
-    "size": 3
+    "size": 4
   },
   {
     "text": "honest",
     "size": 7
   },
   {
+    "text": "honor",
+    "size": 2
+  },
+  {
+    "text": "hopeful",
+    "size": 1
+  },
+  {
     "text": "hot",
-    "size": 18
+    "size": 23
   },
   {
     "text": "hug",
-    "size": 20
+    "size": 28
   },
   {
     "text": "ideal",
@@ -513,11 +606,11 @@
   },
   {
     "text": "important",
-    "size": 5
+    "size": 6
   },
   {
     "text": "incredible",
-    "size": 3
+    "size": 5
   },
   {
     "text": "incredibly",
@@ -533,15 +626,19 @@
   },
   {
     "text": "inspire",
-    "size": 2
+    "size": 3
   },
   {
     "text": "interesting",
-    "size": 7
+    "size": 10
+  },
+  {
+    "text": "interests",
+    "size": 1
   },
   {
     "text": "joy",
-    "size": 2
+    "size": 4
   },
   {
     "text": "knowledgeable",
@@ -549,11 +646,11 @@
   },
   {
     "text": "lead",
-    "size": 16
+    "size": 27
   },
   {
     "text": "leading",
-    "size": 1
+    "size": 2
   },
   {
     "text": "lean",
@@ -561,7 +658,7 @@
   },
   {
     "text": "led",
-    "size": 134
+    "size": 171
   },
   {
     "text": "liberate",
@@ -569,11 +666,11 @@
   },
   {
     "text": "like",
-    "size": 134
+    "size": 175
   },
   {
     "text": "liked",
-    "size": 2
+    "size": 3
   },
   {
     "text": "likes",
@@ -581,23 +678,31 @@
   },
   {
     "text": "logical",
-    "size": 1
-  },
-  {
-    "text": "love",
-    "size": 26
-  },
-  {
-    "text": "loved",
     "size": 2
   },
   {
+    "text": "love",
+    "size": 34
+  },
+  {
+    "text": "loved",
+    "size": 3
+  },
+  {
     "text": "loves",
-    "size": 8
+    "size": 10
   },
   {
     "text": "loving",
     "size": 4
+  },
+  {
+    "text": "luster",
+    "size": 1
+  },
+  {
+    "text": "majestic",
+    "size": 1
   },
   {
     "text": "master",
@@ -609,7 +714,7 @@
   },
   {
     "text": "meaningful",
-    "size": 4
+    "size": 5
   },
   {
     "text": "miracle",
@@ -625,15 +730,15 @@
   },
   {
     "text": "nice",
-    "size": 30
+    "size": 36
   },
   {
     "text": "nicely",
-    "size": 28
+    "size": 34
   },
   {
     "text": "openly",
-    "size": 1
+    "size": 2
   },
   {
     "text": "optimism",
@@ -645,7 +750,7 @@
   },
   {
     "text": "pardon",
-    "size": 2
+    "size": 4
   },
   {
     "text": "passion",
@@ -661,15 +766,15 @@
   },
   {
     "text": "patriot",
-    "size": 5
+    "size": 7
   },
   {
     "text": "peace",
-    "size": 9
+    "size": 10
   },
   {
     "text": "peaceful",
-    "size": 9
+    "size": 10
   },
   {
     "text": "peacefully",
@@ -677,15 +782,15 @@
   },
   {
     "text": "peach",
-    "size": 4
+    "size": 5
   },
   {
     "text": "perfect",
-    "size": 10
+    "size": 14
   },
   {
     "text": "perfectly",
-    "size": 10
+    "size": 13
   },
   {
     "text": "pleasant",
@@ -697,7 +802,7 @@
   },
   {
     "text": "popular",
-    "size": 4
+    "size": 6
   },
   {
     "text": "positive",
@@ -712,16 +817,28 @@
     "size": 2
   },
   {
+    "text": "praising",
+    "size": 1
+  },
+  {
     "text": "pretty",
-    "size": 6
+    "size": 8
   },
   {
     "text": "productive",
     "size": 1
   },
   {
+    "text": "progress",
+    "size": 4
+  },
+  {
+    "text": "progressive",
+    "size": 4
+  },
+  {
     "text": "promise",
-    "size": 41
+    "size": 48
   },
   {
     "text": "promised",
@@ -729,30 +846,38 @@
   },
   {
     "text": "promises",
-    "size": 33
+    "size": 40
   },
   {
-    "text": "proper",
-    "size": 2
-  },
-  {
-    "text": "pros",
+    "text": "prompt",
     "size": 1
   },
   {
+    "text": "proper",
+    "size": 3
+  },
+  {
+    "text": "pros",
+    "size": 2
+  },
+  {
     "text": "protect",
-    "size": 110
+    "size": 127
   },
   {
     "text": "protection",
-    "size": 24
+    "size": 29
   },
   {
     "text": "proud",
-    "size": 5
+    "size": 9
   },
   {
     "text": "proven",
+    "size": 1
+  },
+  {
+    "text": "proves",
     "size": 1
   },
   {
@@ -760,12 +885,16 @@
     "size": 2
   },
   {
+    "text": "qualify",
+    "size": 2
+  },
+  {
     "text": "quiet",
-    "size": 1
+    "size": 2
   },
   {
     "text": "ready",
-    "size": 10
+    "size": 16
   },
   {
     "text": "reasonable",
@@ -777,7 +906,7 @@
   },
   {
     "text": "reform",
-    "size": 3
+    "size": 4
   },
   {
     "text": "reforms",
@@ -785,6 +914,10 @@
   },
   {
     "text": "regard",
+    "size": 3
+  },
+  {
+    "text": "reliable",
     "size": 1
   },
   {
@@ -797,11 +930,11 @@
   },
   {
     "text": "respect",
-    "size": 59
+    "size": 74
   },
   {
     "text": "respectful",
-    "size": 2
+    "size": 3
   },
   {
     "text": "respectfully",
@@ -809,11 +942,15 @@
   },
   {
     "text": "rich",
-    "size": 9
+    "size": 13
   },
   {
     "text": "right",
-    "size": 264
+    "size": 398
+  },
+  {
+    "text": "righten",
+    "size": 1
   },
   {
     "text": "rightful",
@@ -825,14 +962,18 @@
   },
   {
     "text": "safe",
-    "size": 1
+    "size": 3
   },
   {
     "text": "sane",
-    "size": 30
+    "size": 69
   },
   {
     "text": "satisfied",
+    "size": 1
+  },
+  {
+    "text": "secure",
     "size": 1
   },
   {
@@ -853,7 +994,7 @@
   },
   {
     "text": "silent",
-    "size": 4
+    "size": 7
   },
   {
     "text": "skill",
@@ -873,11 +1014,15 @@
   },
   {
     "text": "stable",
-    "size": 9
+    "size": 11
   },
   {
     "text": "strong",
-    "size": 9
+    "size": 12
+  },
+  {
+    "text": "stronger",
+    "size": 1
   },
   {
     "text": "stunning",
@@ -893,15 +1038,15 @@
   },
   {
     "text": "succes",
-    "size": 2
+    "size": 3
   },
   {
     "text": "success",
-    "size": 2
+    "size": 3
   },
   {
     "text": "successful",
-    "size": 1
+    "size": 2
   },
   {
     "text": "sufficient",
@@ -909,27 +1054,35 @@
   },
   {
     "text": "super",
-    "size": 5
+    "size": 8
   },
   {
     "text": "support",
-    "size": 56
+    "size": 73
   },
   {
     "text": "supporter",
-    "size": 29
+    "size": 37
+  },
+  {
+    "text": "supporting",
+    "size": 3
   },
   {
     "text": "supports",
-    "size": 9
+    "size": 11
   },
   {
     "text": "supremacy",
     "size": 2
   },
   {
+    "text": "supreme",
+    "size": 1
+  },
+  {
     "text": "survivor",
-    "size": 12
+    "size": 17
   },
   {
     "text": "sweet",
@@ -945,7 +1098,7 @@
   },
   {
     "text": "thank",
-    "size": 22
+    "size": 27
   },
   {
     "text": "thankful",
@@ -953,15 +1106,15 @@
   },
   {
     "text": "thrill",
-    "size": 4
+    "size": 5
   },
   {
     "text": "thrilled",
-    "size": 4
+    "size": 5
   },
   {
     "text": "top",
-    "size": 33
+    "size": 42
   },
   {
     "text": "tops",
@@ -969,11 +1122,15 @@
   },
   {
     "text": "tough",
-    "size": 21
+    "size": 24
   },
   {
     "text": "traction",
     "size": 2
+  },
+  {
+    "text": "tranquil",
+    "size": 1
   },
   {
     "text": "trendy",
@@ -981,11 +1138,11 @@
   },
   {
     "text": "trust",
-    "size": 3
+    "size": 5
   },
   {
     "text": "unity",
-    "size": 13
+    "size": 15
   },
   {
     "text": "uphold",
@@ -993,7 +1150,7 @@
   },
   {
     "text": "victory",
-    "size": 4
+    "size": 6
   },
   {
     "text": "warm",
@@ -1005,15 +1162,15 @@
   },
   {
     "text": "welcome",
-    "size": 19
+    "size": 23
   },
   {
     "text": "well",
-    "size": 26
+    "size": 31
   },
   {
     "text": "willing",
-    "size": 4
+    "size": 8
   },
   {
     "text": "willingness",
@@ -1021,7 +1178,7 @@
   },
   {
     "text": "win",
-    "size": 38
+    "size": 50
   },
   {
     "text": "winner",
@@ -1029,11 +1186,11 @@
   },
   {
     "text": "winning",
-    "size": 3
+    "size": 5
   },
   {
     "text": "wins",
-    "size": 4
+    "size": 5
   },
   {
     "text": "wisdom",
@@ -1041,31 +1198,35 @@
   },
   {
     "text": "wise",
-    "size": 1
+    "size": 2
   },
   {
     "text": "won",
-    "size": 47
+    "size": 64
   },
   {
     "text": "wonder",
-    "size": 17
+    "size": 33
+  },
+  {
+    "text": "wonderful",
+    "size": 3
   },
   {
     "text": "woo",
-    "size": 13
+    "size": 16
   },
   {
     "text": "work",
-    "size": 46
+    "size": 60
   },
   {
     "text": "worked",
-    "size": 1
+    "size": 2
   },
   {
     "text": "works",
-    "size": 2
+    "size": 3
   },
   {
     "text": "worth",
