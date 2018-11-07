@@ -30,14 +30,14 @@ class StdOutListener(StreamListener):
         #eliminate the deleted tweets
         if "delete" in tweetJson:
             return True
-        
+
         text = tweetJson["text"]
         #filter - text contains trump
         targeted_str = "trump"
         #if True:
         if targeted_str in tweetJson["text"].lower():
             self.tweet_count += 1
-            with open('raw_text.json', 'r+') as f: #‘r+’ : This mode indicate that file will be open for both reading and writing
+            with open('raw_text_2.json', 'r+') as f: #‘r+’ : This mode indicate that file will be open for both reading and writing
                 if len(f.read()) == 0:
                     f.write('[\n' + json.dumps(tweetJson))
                 elif self.tweet_count<self.num_needed:
