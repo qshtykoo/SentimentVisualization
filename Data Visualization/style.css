@@ -1,0 +1,35 @@
+* {
+		box-sizing: border-box;
+}
+.page-header {
+	background-color: rgba(0,0,0,0.2);
+	width: 80%;
+	margin: auto;
+    color: rgba(0,0,0,0.6);
+	padding: 0px;
+	border-bottom: 0px;
+	font: 300 23px "Helvetica Neue";
+	text-align: center;
+}
+body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+}
+path {
+	fill: none;
+	stroke: black;
+	stroke-width: 1.5px;
+}
+.time.label {
+	font: 500 200px "Helvetica Neue";
+	fill: rgba(0,0,0,0.4);
+}
+.overlay {
+  fill: none;
+  pointer-events: all;
+  cursor: ew-resize;
+}
+#option {
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}

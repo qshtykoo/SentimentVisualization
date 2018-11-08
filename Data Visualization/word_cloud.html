@@ -4,236 +4,29 @@
 <script src="d3.layout.cloud.js"></script>
 <head>
     <title>Positive Words of Tweets Related to Donald Trump</title>
-	<script src="0_goodwords.js" ></script>
-	<script src="1_goodwords.js"></script>
-	<script src="2_goodwords.js"></script>
-	<script src="3_goodwords.js"></script>
-	<script src="4_goodwords.js"></script>
-	<script src="5_goodwords.js"></script>
-	<script src="6_goodwords.js"></script>
-	<script src="7_goodwords.js"></script>
-	<script src="8_goodwords.js"></script>
-	<script src="9_goodwords.js"></script>
-	<script src="10_goodwords.js"></script>
-	<script src="11_goodwords.js"></script>
+	<script src="goodwords.js"></script>
+	<script src="badwords.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<style>
-    body {
-        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
-    }
-    .legend {
-        border: 1px solid #555555;
-        border-radius: 5px 5px 5px 5px;
-        font-size: 0.8em;
-        margin: 10px;
-        padding: 8px;
-    }
-    .bld {
-        font-weight: bold;
-    }
-	path {
-  		fill: none;
-  		stroke: black;
-  		stroke-width: 1.5px;
-	}
-	.year.label {
-		font: 500 200px "Helvetica Neue";
-		fill: #ddd;
-	}
-	.overlay {
-	  fill: none;
-	  pointer-events: all;
-	  cursor: ew-resize;
-	}
-</style>
 <body>
 
 </body>
-<script>
-	<!-- word cloud begins -->
-    //var frequency_list = [{"text":"study","size":40},{"text":"motion","size":15},{"text":"forces","size":10},{"text":"electricity","size":15},{"text":"movement","size":10},{"text":"relation","size":5},{"text":"things","size":10},{"text":"force","size":5},{"text":"ad","size":5},{"text":"energy","size":85},{"text":"living","size":5},{"text":"nonliving","size":5},{"text":"laws","size":15},{"text":"speed","size":45},{"text":"velocity","size":30},{"text":"define","size":5},{"text":"constraints","size":5},{"text":"universe","size":10},{"text":"physics","size":120},{"text":"describing","size":5},{"text":"matter","size":90},{"text":"physics-the","size":5},{"text":"world","size":10},{"text":"works","size":10},{"text":"science","size":70},{"text":"interactions","size":30},{"text":"studies","size":5},{"text":"properties","size":45},{"text":"nature","size":40},{"text":"branch","size":30},{"text":"concerned","size":25},{"text":"source","size":40},{"text":"google","size":10},{"text":"defintions","size":5},{"text":"two","size":15},{"text":"grouped","size":15},{"text":"traditional","size":15},{"text":"fields","size":15},{"text":"acoustics","size":15},{"text":"optics","size":15},{"text":"mechanics","size":20},{"text":"thermodynamics","size":15},{"text":"electromagnetism","size":15},{"text":"modern","size":15},{"text":"extensions","size":15},{"text":"thefreedictionary","size":15},{"text":"interaction","size":15},{"text":"org","size":25},{"text":"answers","size":5},{"text":"natural","size":15},{"text":"objects","size":5},{"text":"treats","size":10},{"text":"acting","size":5},{"text":"department","size":5},{"text":"gravitation","size":5},{"text":"heat","size":10},{"text":"light","size":10},{"text":"magnetism","size":10},{"text":"modify","size":5},{"text":"general","size":10},{"text":"bodies","size":5},{"text":"philosophy","size":5},{"text":"brainyquote","size":5},{"text":"words","size":5},{"text":"ph","size":5},{"text":"html","size":5},{"text":"lrl","size":5},{"text":"zgzmeylfwuy","size":5},{"text":"subject","size":5},{"text":"distinguished","size":5},{"text":"chemistry","size":5},{"text":"biology","size":5},{"text":"includes","size":5},{"text":"radiation","size":5},{"text":"sound","size":5},{"text":"structure","size":5},{"text":"atoms","size":5},{"text":"including","size":10},{"text":"atomic","size":10},{"text":"nuclear","size":10},{"text":"cryogenics","size":10},{"text":"solid-state","size":10},{"text":"particle","size":10},{"text":"plasma","size":10},{"text":"deals","size":5},{"text":"merriam-webster","size":5},{"text":"dictionary","size":10},{"text":"analysis","size":5},{"text":"conducted","size":5},{"text":"order","size":5},{"text":"understand","size":5},{"text":"behaves","size":5},{"text":"en","size":5},{"text":"wikipedia","size":5},{"text":"wiki","size":5},{"text":"physics-","size":5},{"text":"physical","size":5},{"text":"behaviour","size":5},{"text":"collinsdictionary","size":5},{"text":"english","size":5},{"text":"time","size":35},{"text":"distance","size":35},{"text":"wheels","size":5},{"text":"revelations","size":5},{"text":"minute","size":5},{"text":"acceleration","size":20},{"text":"torque","size":5},{"text":"wheel","size":5},{"text":"rotations","size":5},{"text":"resistance","size":5},{"text":"momentum","size":5},{"text":"measure","size":10},{"text":"direction","size":10},{"text":"car","size":5},{"text":"add","size":5},{"text":"traveled","size":5},{"text":"weight","size":5},{"text":"electrical","size":5},{"text":"power","size":5}];
-	var frequency_list = data_0;
-	
-    var color = d3.scale.linear()
-            .domain([0,1,2,3,4,5,6,10,15,20,100])
-            .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
-			
-	var canvas1 = d3.select("body").append("svg")
-				    .attr("width", 1000)
-					.attr("height", 350)
-					.append("g")
-					.attr("transform", "translate(320,200)");
-	
-	var canvas2 = d3.select("body").append("svg")
-					.attr("width", 1000)
-					.attr("height", 350);
-	
-	var layout_1 = d3.layout.cloud().size([1000, 400]);
-	
-	function drawCloud(frequency_list){
-		layout_1
-			.words(frequency_list)
-            .rotate(0)
-            .fontSize(function(d) { return d.size; })
-            .on("end", draw)
-            .start();}
-	
-	drawCloud(frequency_list);
-	
-	
-	function draw(words) {
-		//var data_1 = words.slice(0, words.length - 55);
-		//var data_2 = words.slice(words.length - 55, words.length);
-		 canvas1.selectAll("text").remove(); //remove the text(content) of svg
-		 
-		 canvas1.selectAll("text")
-                .data(words)
-                .enter().append("text")
-				.attr("transform", function(d) {
-                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-                })
-                //.style("font-size", function(d) { return 1 + "px"; })
-				.style("font-size", function(d) { return d.size + "px";})
-                .style("fill", function(d, i) { return color(i); })
-                .text(function(d) { return d.text; })
-	}
-	<!-- word cloud ends -->
-	
-	<!-- horizontal line construction begins -->
-	var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5},
-		width = 960 - margin.right,
-		height = 100 - margin.top - margin.bottom;
-	
-	// change me (in Building Blocks) to see how the path description changes
-	var line_height = 340*2;
-    var line_data = [  
-      {'x': 1, 'y': line_height}, 
-      {'x': 1000, 'y': line_height},
-    ];
-    
-    var x_scale = d3.scale.linear().domain([0,width]).range([0, 960]);
-    var y_scale = d3.scale.linear().domain([0,width]).range([300, 0]);
-     
-    var line = d3.svg.line()
-                 .x(function(d) { return x_scale(d['x']); })
-                 .y(function(d) { return y_scale(d['y']); });
-				 
-	//canvas2.selectAll('text').remove();
-	var path = canvas2.append('path').attr('d', line(line_data));
-	<!-- horizontal line construction ends -->
 
-    
-	<!-- time frame label begins -->
-	// Add the time frame label; the value is set on transition.
-	var label = canvas2.append("text")
-		.attr("class", "year label")
-		.attr("text-anchor", "end")
-		.attr("y", 250)
-		.attr("x", width)
-		.text(1);
-	// Add an overlay for the year label.
-	var box = label.node().getBBox();
-	
-	var overlay = canvas2.append("rect")
-        .attr("class", "overlay")
-        .attr("x", box.x)
-        .attr("y", box.y)
-        .attr("width", box.width)
-        .attr("height", box.height)
-        .on("mouseover", enableInteraction);
-	<!-- time frame label ends -->
-	
-	// Start a transition that interpolates the data based on year.
-	/*canvas2.transition()
-      .duration(10000)
-      .ease("linear")
-      .tween("year", d3.interpolateNumber(1, 12))
-      .each("end", enableInteraction);*/
-	
-	// After the transition finishes, you can mouseover to change the year.
-	function enableInteraction() {
-		var yearScale = d3.scale.linear()
-			.domain([1, 12])
-			.range([box.x + 10, box.x + box.width - 10])
-			.clamp(true);
-
-		// Cancel the current transition, if any.
-		canvas2.transition().duration(0);
-
-		overlay
-			.on("mouseover", mouseover)
-			.on("mouseout", mouseout)
-			.on("mousemove", mousemove);
-			//.on("touchmove", mousemove);
-
-		function mouseover() {
-		  label.classed("active", true);
-		}
-
-		function mouseout() {
-		  label.classed("active", false);
-		}
-
-		function mousemove() {
-		  displayYear(yearScale.invert(d3.mouse(this)[0]));
-		}
-	}
-	
-	// Updates the display to show the specified year.
-	function displayYear(time_frame) {
-		//dot.data(interpolateData(year), key).call(position).sort(order);
-		label.text(Math.round(time_frame));
-		switch(Math.round(time_frame)){
-			case 1:
-			drawCloud(data_0); break;
-			case 2:
-			drawCloud(data_1); break;
-			case 3:
-			drawCloud(data_2); break;
-			case 4:
-			drawCloud(data_3); break;
-			case 5:
-			drawCloud(data_4); break;
-			case 6:
-			drawCloud(data_5); break;
-			case 7:
-			drawCloud(data_6); break;
-			case 8:
-			drawCloud(data_7); break;
-			case 9:
-			drawCloud(data_8); break;
-			case 10:
-			drawCloud(data_9); break;
-			case 11:
-			drawCloud(data_10); break;
-			case 12:
-			drawCloud(data_11); break;
-		}
-	}
-
-	
-	// For the interpolated data, the dots and label are redrawn.
-	function tweenYear() {
-		var time_frame = d3.interpolateNumber(1, 12); // here it is a float
-		return function(t) { displayYear(time_frame(t)); };
-	  }
-	// Interpolates the dataset for the given (fractional) year.
-	  /*function interpolateData(year) {
-		return nations.map(function(d) {
-		  return {
-			name: d.name,
-			region: d.region,
-			income: interpolateValues(d.income, year),
-			population: interpolateValues(d.population, year),
-			lifeExpectancy: interpolateValues(d.lifeExpectancy, year)
-		  };
-		});
-	  }*/
+<div class="container-text">
+	<div class = "page-header"><p>Words Used in Tweets Related to Donald Trump</p></div>
 
 
-</script>
+	<select id = "option">
+		<option value="positive">Positive Words</option>
+		<option value="negative">Negative Words</option> 
+	</select>
+	<div id="canvas1"></div>
+
+	<p>22.5 minutes / Time Frame: Wed Oct 31 15:35:13 +0000 2018 ~ Wed Oct 31 18:05:57 +0000 2018</p>
+
+	<div id="canvas2"></div>
+	<script src="wordcloud.js"></script>
 
 </div>
-
 
 </html>
