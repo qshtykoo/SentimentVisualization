@@ -73,7 +73,7 @@ if __name__== "__main__":
 
     tokenizer = pickle.load(open(r'tokenizer.pickle', 'rb'))
 
-    with open('raw_text_2.json') as f:
+    with open('raw_text_3.json') as f:
         tweetJson = json.load(f) #tweetJson is a list
 
     sentiAnalysis = sentimentAnalysis(model, tokenizer, tweetJson)
@@ -91,6 +91,6 @@ if __name__== "__main__":
     sentiments = sentiAnalysis.predict(texts['Text'])
 
     #save the predicted results
-    with open("sentiments_2.txt", 'wb') as fp:
+    with open("sentiments_3.txt", 'wb') as fp:
             pickle.dump(sentiments, fp)
 

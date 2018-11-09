@@ -37,7 +37,7 @@ class StdOutListener(StreamListener):
         #if True:
         if tweetJson["place"] != None:
             self.tweet_count += 1
-            with open('raw_text_2.json', 'r+') as f: #‘r+’ : This mode indicate that file will be open for both reading and writing
+            with open('raw_text_3.json', 'r+') as f: #‘r+’ : This mode indicate that file will be open for both reading and writing
                 if len(f.read()) == 0:
                     f.write('[\n' + json.dumps(tweetJson))
                 elif self.tweet_count<self.num_needed:

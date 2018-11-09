@@ -7,10 +7,10 @@ import numpy as np
 
 
 
-with open('raw_text_2.json') as f:
+with open('raw_text_3.json') as f:
         tweetJson = json.load(f) #tweetJson is a list
 
-sentiments = pickle.load(open(r'sentiments_2.txt', 'rb'))
+sentiments = pickle.load(open(r'sentiments_3.txt', 'rb'))
 
 texts = pd.DataFrame(index=range(4999), columns = ["Sentiments", "Location", "Country_code", "Country_name", "Text", "Coordinates"])
 for i in range(len(tweetJson)):
@@ -51,10 +51,10 @@ for i in range(len(world_sentiment)):
                 total_num = len( texts [ texts["Country_name"] == targeted_country ] )
                 try:
                         pos_ratio = len(texts_pos[ texts_pos["Country_name"] == targeted_country ]) / total_num
+                        world_sentiment["positiveRatio"][i] = repr(pos_ratio * 100)
                 except:
                         print(targeted_country)
-                world_sentiment["positiveRatio"][i] = repr(pos_ratio * 100)
         else:
                 world_sentiment["positiveRatio"][i] = 0
 
-world_sentiment.to_csv(r"Data Visualization/DATA/world_sentiments.tsv", sep='\t', index=False)
+world_sentiment.to_csv(r"Data Visualization/DATA/world_sentiments_2.tsv", sep='\t', index=False)

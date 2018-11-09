@@ -1,0 +1,243 @@
+id	name	positiveRatio
+CHN	China	0.0
+IND	India	42.87081339712918
+USA	United States	62.86821214974488
+IDN	Indonesia	61.03448275862069
+BRA	Brazil	49.46262490694237
+PAK	Pakistan	9.090909090909092
+BGD	Bangladesh	150.0
+NGA	Nigeria	59.82241953385128
+RUS	Russia	17.513513513513516
+JPN	Japan	10.650406504065039
+MEX	Mexico	67.64705882352942
+PHL	Philippines	17.647058823529417
+VNM	Vietnam	0.0
+ETH	Ethiopia	0.0
+DEU	Germany	39.285714285714285
+EGY	Egypt	3.2258064516129035
+TUR	Turkey	26.358893544882584
+COD	Congo, Democratic Republic of the	0.0
+IRN	Iran	14.905149051490516
+THA	Thailand	78.57142857142857
+FRA	France	70.14024787997391
+GBR	United Kingdom	64.90545050055617
+ITA	Italy	66.07142857142857
+MMR	Burma	0.0
+ZAF	South Africa	47.82967032967033
+KOR	Korea, South	0.0
+UKR	Ukraine	0.0
+COL	Colombia	26.838235294117645
+SDN	Sudan	0.0
+TZA	Tanzania	0.0
+ARG	Argentina	66.15581098339719
+ESP	Spain	53.05690072639225
+KEN	Kenya	57.5
+POL	Poland	100.0
+DZA	Algeria	0.0
+CAN	Canada	75.25817097838814
+UGA	Uganda	100.0
+MAR	Morocco	0.0
+PER	Peru	35.6060606060606
+IRQ	Iraq	0.0
+SAU	Saudi Arabia	3.4263608731693838
+AFG	Afghanistan	0.0
+NPL	Nepal	0.0
+UZB	Uzbekistan	0.0
+VEN	Venezuela	43.69747899159664
+MYS	Malaysia	43.07692307692308
+GHA	Ghana	26.25
+YEM	Yemen	0.0
+TWN	Taiwan	0.0
+PRK	Korea, North	0.0
+SYR	Syria	0.0
+ROU	Romania	0.0
+MOZ	Mozambique	0.0
+AUS	Australia	85.14285714285714
+LKA	Sri Lanka	0.0
+MDG	Madagascar	0.0
+CIV	Cote d'Ivoire	0.0
+CMR	Cameroon	66.66666666666666
+NLD	Netherlands	0.0
+CHL	Chile	53.6936936936937
+BFA	Burkina Faso	0.0
+NER	Niger	26.66666666666667
+KAZ	Kazakhstan	0.0
+MWI	Malawi	0.0
+ECU	Ecuador	59.722222222222214
+KHM	Cambodia	0.0
+SEN	Senegal	36.666666666666664
+MLI	Mali	0.0
+GTM	Guatemala	70.0
+AGO	Angola	0.0
+ZMB	Zambia	50.0
+ZWE	Zimbabwe	125.0
+CUB	Cuba	100.0
+RWA	Rwanda	0.0
+GRC	Greece	50.0
+PRT	Portugal	54.16666666666667
+TUN	Tunisia	0.0
+TCD	Chad	0.0
+BEL	Belgium	99.99999999999999
+GIN	Guinea	0.0
+CZE	Czech Republic	0.0
+SOM	Somalia	50.0
+BOL	Bolivia	0.0
+HUN	Hungary	150.0
+BDI	Burundi	0.0
+DOM	Dominican Republic	14.285714285714285
+BLR	Belarus	0.0
+HTI	Haiti	100.0
+SWE	Sweden	66.66666666666666
+BEN	Benin	0.0
+AZE	Azerbaijan	0.0
+AUT	Austria	0.0
+HND	Honduras	70.0
+CHE	Switzerland	0.0
+TJK	Tajikistan	0.0
+ISR	Israel	0.0
+SRB	Serbia	0.0
+BGR	Bulgaria	0.0
+HKG	Hong Kong	0.0
+LAO	Laos	0.0
+LBY	Libya	0.0
+JOR	Jordan	0.0
+PRY	Paraguay	48.86363636363637
+TGO	Togo	0.0
+PNG	Papua New Guinea	0.0
+SLV	El Salvador	0.0
+NIC	Nicaragua	50.0
+ERI	Eritrea	0.0
+DNK	Denmark	33.33333333333333
+KGZ	Kyrgyzstan	0.0
+SVK	Slovakia	0.0
+FIN	Finland	0.0
+SLE	Sierra Leone	0.0
+ARE	United Arab Emirates	31.66666666666667
+TKM	Turkmenistan	0.0
+CAF	Central African Republic	0.0
+SGP	Singapore	166.66666666666666
+NOR	Norway	100.0
+BIH	Bosnia and Herzegovina	0.0
+GEO	Georgia	0.0
+CRI	Costa Rica	106.66666666666666
+HRV	Croatia	66.66666666666666
+MDA	Moldova	0.0
+NZL	New Zealand	18.181818181818183
+IRL	Ireland	87.13450292397661
+COG	Congo, Republic of the	0.0
+LBN	Lebanon	25.0
+PRI	Puerto Rico	0.0
+LBR	Liberia	0.0
+ALB	Albania	0.0
+LTU	Lithuania	0.0
+URY	Uruguay	71.42857142857142
+PAN	Panama	100.0
+MRT	Mauritania	0.0
+MNG	Mongolia	100.0
+OMN	Oman	33.33333333333333
+ARM	Armenia	0.0
+JAM	Jamaica	33.33333333333333
+KWT	Kuwait	6.8478260869565215
+PSE	West Bank	0.0
+LVA	Latvia	0.0
+NAM	Namibia	0.0
+MKD	Macedonia	0.0
+BWA	Botswana	50.0
+SVN	Slovenia	0.0
+LSO	Lesotho	0.0
+GMB	Gambia, The	0.0
+KWT	Kosovo	0.0
+149	Gaza Strip	0.0
+GNB	Guinea-Bissau	0.0
+GAB	Gabon	0.0
+SWZ	Swaziland	0.0
+153	Mauritius	0.0
+EST	Estonia	0.0
+TTO	Trinidad and Tobago	50.0
+TLS	Timor-Leste	0.0
+CYP	Cyprus	0.0
+FJI	Fiji	0.0
+QAT	Qatar	0.0
+160	Comoros	0.0
+GUY	Guyana	0.0
+DJI	Djibouti	0.0
+163	Bahrain	28.57142857142857
+BTN	Bhutan	0.0
+MNE	Montenegro	0.0
+GNQ	Equatorial Guinea	0.0
+SLB	Solomon Islands	0.0
+168	Macau	0.0
+169	Cape Verde	0.0
+LUX	Luxembourg	0.0
+ESH	Western Sahara	0.0
+SUR	Suriname	0.0
+173	Malta	0.0
+174	Maldives	0.0
+BRN	Brunei	0.0
+BLZ	Belize	0.0
+BHS	Bahamas, The	0.0
+ISL	Iceland	100.0
+179	French Polynesia	0.0
+180	Barbados	33.33333333333333
+181	Mayotte	0.0
+NCL	New Caledonia	0.0
+183	Netherlands Antilles	0.0
+VUT	Vanuatu	0.0
+185	Samoa	0.0
+186	Sao Tome and Principe	0.0
+187	Saint Lucia	0.0
+188	Tonga	0.0
+189	Virgin Islands	0.0
+190	Grenada	0.0
+191	Micronesia, Federated States of	0.0
+192	Aruba	0.0
+193	Saint Vincent and the Grenadines	0.0
+194	Kiribati	0.0
+195	Jersey	0.0
+196	Seychelles	0.0
+197	Antigua and Barbuda	0.0
+198	Andorra	50.0
+199	Isle of Man	100.0
+DOM	Dominica	50.0
+201	Bermuda	0.0
+202	American Samoa	0.0
+203	Marshall Islands	0.0
+204	Guernsey	0.0
+GRL	Greenland	0.0
+206	Cayman Islands	0.0
+207	Saint Kitts and Nevis	50.0
+208	Faroe Islands	0.0
+209	Northern Mariana Islands	0.0
+210	Liechtenstein	0.0
+211	San Marino	0.0
+212	Monaco	0.0
+213	Saint Martin	0.0
+214	Gibraltar	0.0
+215	British Virgin Islands	0.0
+216	Turks and Caicos Islands	100.0
+217	Palau	0.0
+218	Akrotiri	0.0
+219	Dhekelia	0.0
+220	Wallis and Futuna	0.0
+221	Anguilla	0.0
+222	Nauru	0.0
+223	Cook Islands	0.0
+224	Tuvalu	0.0
+225	Saint Helena, Ascension, and Tristan da Cunha	0.0
+226	Saint Barthelemy	0.0
+227	Saint Pierre and Miquelon	0.0
+228	Montserrat	0.0
+FLK	Falkland Islands (Islas Malvinas)	0.0
+230	Norfolk Island	0.0
+231	Svalbard	0.0
+232	Christmas Island	0.0
+233	Tokelau	0.0
+234	Niue	0.0
+235	Holy See (Vatican City)	0.0
+236	Cocos (Keeling) Islands	0.0
+237	Pitcairn Islands	0.0
+ATA	Antarctica	0.0
+ATF	French Southern and Antarctic Lands	0.0
+SDS	South Sudan	0.0
+ABV	Somaliland	0.0
+OSA	Kosovo	0.0
