@@ -73,7 +73,7 @@ if __name__== "__main__":
 
     tokenizer = pickle.load(open(r'tokenizer.pickle', 'rb'))
 
-    with open('raw_text.json') as f:
+    with open('raw_text_2.json') as f:
         tweetJson = json.load(f) #tweetJson is a list
 
     sentiAnalysis = sentimentAnalysis(model, tokenizer, tweetJson)
@@ -81,14 +81,16 @@ if __name__== "__main__":
     badwords_tokens = sentiAnalysis.CollectBadwords()
 
 
-    texts = pd.DataFrame(index=range(4999), columns = ["Text"])
+    texts = pd.DataFrame(index=range(4999), columns = ["Location", "Text", "Coordinates"])
     for i in range(len(tweetJson)):
+        texts["Location"][i] = tweetJson[i]["place"]["full_name"]
         texts["Text"][i] = tweetJson[i]["text"]
+        texts["Coordinates"][i] = tweetJson[i]["place"]["bounding_box"]["coordinates"]
 
     texts["Text"] = texts["Text"].apply(lambda x: sentiAnalysis.text_cleaning(x))
     sentiments = sentiAnalysis.predict(texts['Text'])
 
     #save the predicted results
-    #with open("sentiments.txt", 'wb') as fp:
-            #pickle.dump(sentiments, fp)
+    with open("sentiments_2.txt", 'wb') as fp:
+            pickle.dump(sentiments, fp)
 

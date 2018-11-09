@@ -35,7 +35,7 @@ class StdOutListener(StreamListener):
         #filter - text contains trump
         targeted_str = "trump"
         #if True:
-        if targeted_str in tweetJson["text"].lower():
+        if tweetJson["place"] != None:
             self.tweet_count += 1
             with open('raw_text_2.json', 'r+') as f: #‘r+’ : This mode indicate that file will be open for both reading and writing
                 if len(f.read()) == 0:

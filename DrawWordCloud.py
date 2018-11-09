@@ -78,19 +78,24 @@ class split_words:
 
     def split_text(self, tweetJson, time_step, word_counter, portions=12):
         tweetJson["Timestamp"] = pd.to_numeric(tweetJson["Timestamp"])
+        total_data = []
         for i in range(portions):
             tweet = tweetJson[ tweetJson["Timestamp"] <= self.start_time + (i+1) * time_step ]
             tweet = self.clean_words(tweet)
-            goodwords = word_counter.CountWords(tweet["Text"], "good")
+            goodwords = word_counter.CountWords(tweet["Text"], "bad")
             goodwords_list = []
             word_size_pair = {}
             for key, value in goodwords.items():
                 word_size_pair["text"] = key
                 word_size_pair["size"] = value
                 goodwords_list.append(word_size_pair.copy()) # .copy() is to prevent pointer behavior
-            filename = "{}_goodwords.json".format(i)
-            with open(filename, 'w') as fp:
-                json.dump(goodwords_list, fp, indent = 2)
+            total_data.append(goodwords_list)
+            #filename = "{}_goodwords.json".format(i)
+            #with open(filename, 'w') as fp:
+                #json.dump(goodwords_list, fp, indent = 2)
+        filename = "badwords.js";
+        with open(filename, 'w') as fp:
+            json.dump(total_data, fp, indent = 2)
     
     def senti_split_text(self, tweetJson, sentiments):
         tweet_text = pd.DataFrame(index=range(4999), columns = ["Sentiment", "Text", "Timestamp"])
@@ -138,14 +143,14 @@ class count_words:
             wordslist = []
 
             for line in wordsfile:
-                line = re.sub('\n', '', line)
+                line = re.sub("\n", "", line)
                 wordslist.append(line)
         elif p == "bad":
-            wordsfile = open("GoodWords.txt", 'r')
+            wordsfile = open("BadWords.txt", 'r')
             wordslist = []
 
             for line in wordsfile:
-                line = re.sub('\n', '', line)
+                line = re.sub("\n", "", line)
                 wordslist.append(line)
         else:
             print("there is no such option, it's either good or bad")
@@ -167,7 +172,10 @@ class count_words:
             words_list = {}
             badwords_list = self.CollectWords("bad")
             for i in range(len(badwords_list)):
-                targeted_words = re.findall(badwords_list[i], sumed_words)
+                try:
+                    targeted_words = re.findall(badwords_list[i], sumed_words)
+                except:
+                    print(error,i)
                 freq = len(targeted_words)
                 if len(targeted_words) != 0:
                     words_list[targeted_words[0]] = freq

@@ -463,7 +463,7 @@ bulkier
 bulkiness
 bulky
 bulkyness
-bull****
+bull####
 bull----
 bullies
 bullshit
@@ -1555,7 +1555,8 @@ extremism
 extremist
 extremists
 eyesore
-f**k
+f##k
+fuck
 fabricate
 fabrication
 facetious
