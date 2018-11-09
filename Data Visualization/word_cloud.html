@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 <html>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="d3.layout.cloud.js"></script>
+<script src="src/d3.layout.cloud.js"></script>
+<script src="src/goodwords.js"></script>
+<script src="src/badwords.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <head>
     <title>Positive Words of Tweets Related to Donald Trump</title>
-	<script src="goodwords.js"></script>
-	<script src="badwords.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -25,8 +26,9 @@
 	<p>22.5 minutes / Time Frame: Wed Oct 31 15:35:13 +0000 2018 ~ Wed Oct 31 18:05:57 +0000 2018</p>
 
 	<div id="canvas2"></div>
-	<script src="wordcloud.js"></script>
-
+	
+	<script src="src/wordcloud.js"></script>  <!-- it should be placed here otherwise it won't able to read the variable defined in other js files -->
+	
 </div>
 
 </html>
