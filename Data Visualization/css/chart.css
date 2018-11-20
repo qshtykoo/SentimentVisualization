@@ -1,0 +1,41 @@
+/* for map */
+#mapid {
+    height: 300px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* for the line graph in trend */
+.line {
+    stroke: steelblue;
+    fill: none;
+    stroke-width: 3;
+}
+
+/* for tooltips */
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 80px;					
+    height: 40px;					
+    padding: 2px;				
+    font: 15px;		
+    background: rgb(255, 255, 255);	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+/* for insight */
+text.hover{
+    font-size: 25px;
+}
+.insight.axis path{
+    display: none;
+}
+
+/* put charts in the middle */
+#heatmap{margin-left:auto; margin-right:auto; display:block;}
+.source.bubble{margin-left:auto; margin-right:auto; display:block;}

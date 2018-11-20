@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>line chart</title>
+  <link rel="stylesheet" type="text/css" href="css/title.css">
+  <link rel="stylesheet" type="text/css" href="css/chart.css">
+  <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+</head>
+<body>
+    <h1>Emoji Trends on Twitter</h1>
+    
+    <p class="selects trend">
+      <select id="hashtag_selector"></select>
+      <select id="emoji_dataset">
+        <option value="count" selected="selected">count</option>
+        <option value="proportion">proportion</option>
+      </select>
+    </p>
+    <div>
+      <svg id="emoji_bubble"></svg>
+      <svg id="hashtag_line"></svg>  
+    </div>   
+    <p class = "description">The black line represents the Hashtag. Choose at most 10 emojis to show their trends.</p>
+    <p class="dataset">Dataset: All Tweets with Hashtags posted during 2017.12.18 11:11:3~2017.12.18 23:56:22 CET</p>
+  <script src="DATA/trend_data.js"></script>
+  <script src="src/trend.js"></script>
+</body>
+</html>

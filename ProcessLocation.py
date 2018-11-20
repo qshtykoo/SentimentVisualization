@@ -57,4 +57,6 @@ for i in range(len(world_sentiment)):
         else:
                 world_sentiment["positiveRatio"][i] = 0
 
-world_sentiment.to_csv(r"Data Visualization/DATA/world_sentiments_2.tsv", sep='\t', index=False)
+#world_sentiment.to_csv(r"Data Visualization/DATA/world_sentiments_2.tsv", sep='\t', index=False)
+coordinates = texts['Coordinates']
+coordinates.to_csv(r"Data Visualization/DATA/coordinates.tsv", sep='\t', index=False)
